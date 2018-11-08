@@ -1,0 +1,30 @@
+<% var meta = { 
+  title:'お問い合わせありがとうございました - MyData Japan', 
+  desc:'「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/thanks.html'
+}; %>
+<%- include('../_layout/header', {meta: meta}) -%>    
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">お問い合わせありがとうございました</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+
+            <div class="columns is-desktop is-centered is-spaced">
+                <div class="column is-10 is-spaced mdj-declaration mdj-marked">
+                    内容を確認し、送信いただいたメールアドレスにご連絡させていただきます。
+                </div>
+            </div>
+        </div>
+    </section>
+<%- include('../_layout/footer') -%>

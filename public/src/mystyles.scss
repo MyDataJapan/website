@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+$info: #16c1f3;
+$primary: #16c1f3;
+$link: #16c1f3;
+$family-sans-serif: 'M PLUS 1p';
+.mdj-has-padding-30 {
+    padding: 30px;
+}
+
+.mdj-is-vertical-centered {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.mdj-brand-logo {
+    padding: 10px;
+}
+
+.mdj-content {
+    padding: 50px 20px;
+}
+
+.mdj-content-top {
+    padding-top: 10px;
+}
+
+.mdj-has-shadow {
+    -webkit-filter: drop-shadow(0 0 0.3rem gray);
+    filter: drop-shadow(0 0 0.3rem gray);
+}
+
+.mdj-has-dark-shadow {
+    -webkit-filter: drop-shadow(0px 0px 2px black);
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+.mdj-has-bg-img {
+    background: url('/images/FRI_bannerbackground.jpg')center center;
+    background-size: cover;
+}
+
+.mdj-has-bg-img .title,
+.mdj-has-bg-img .subtitle {
+    color: aliceblue !important;
+}
+
+.mdj-youtube iframe {
+    width: 100%;
+}
+
+.mdj-event-detail {
+    background-color: aliceblue;
+    font-weight: bold;
+    p,
+    li,
+    td {
+        padding: 10px;
+    }
+}
+
+.mdj-event-report {
+    p {
+        font-weight: bold;
+        padding: 10px 0px;
+    }
+    ul {
+        padding-left: 2em;
+    }
+    li {
+        list-style-type: disc;
+        list-style-position: inside;
+        text-indent: -1em;
+        padding-left: 2em;
+        padding: 2px 0px;
+    }
+}
+
+@import "~bulma/bulma";
