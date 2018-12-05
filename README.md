@@ -1,29 +1,29 @@
-## ウェブサイト更新手順
+## ウェブサイト更新手順  
+### 概要  
+詳しい環境構築手順は[こちら](ContributorGuide.md)を参照してください。　　
 
-### 概要
+テンプレートエンジンはEJSを用いて、Gulpでビルドしています。　　
+CSSフレームワークはBulmaを用いて、webpackでビルドしています。　　
 
-テンプレートエンジンはEJSを用いて、Gulpでビルドしています。
-CSSフレームワークはBulmaを用いて、webpackでビルドしています。
+`$ npm run gulp`  
 
-`$ gulp ejs`
+でHTMLが生成され  
 
-でHTMLが生成され
+`$ npm run build`  
 
-`$ npm run build`
+でCSSが生成されます。  
 
-でCSSが生成されます。
-
-`public` フォルダ内に生成されるため、`public` フォルダをそのままアップロードすれば、反映完了します。
+`public` フォルダ内に生成されるため、`public` フォルダをそのままアップロードすれば、反映完了します。  
 
 現状アップロード先はAmazon S3で、cloudfrontから参照するようにしています。
 
 ### 更新手順
 
 1. `_page` フォルダにHTMLの元ファイル（.ejs）があるので、更新したいファイルを更新
-1. `$ gulp ejs` を実行
+1. `$ npm run gulp` を実行
 1. スタイル変更も行いたい場合は、`_style/mystyles.scss` を更新
 1. `$ npm run build` を実行
-1. `$ http-server ./public`を実行してブラウザで確認
+1. `$ http-server`を実行してブラウザで確認
 1. `public` フォルダの内容が更新されていることを確認
 1. 変更をプルリクをしていただけたら、確認後反映いたします。
 
