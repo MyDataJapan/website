@@ -1,0 +1,12 @@
+[
+  {
+    "title": "MyData 2019",
+    "href": "https://mydata.org/events/",
+    "date": "2019/9/25(水) - 2019/9/27(金)",
+    "location": "ヘルシンキ - フィンランド",
+    "img": {
+        "src": "images/MyData_2019.jpg",
+        "alt": "MyData 2019"
+    }
+  }
+]
