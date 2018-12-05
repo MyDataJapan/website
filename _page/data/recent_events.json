@@ -1,0 +1,32 @@
+[
+  {
+    "title": "MyData Global General meeting",
+    "href": "https://mydata.org/who-we-are/organisation/",
+    "date": "2018/11/15（木）23:00-",
+    "location": "バルセロナ - スペイン",
+    "img": {
+        "src": "images/mydata_barcelona.png",
+        "alt": "MyData Global general meeting"
+    }
+  },
+  {
+    "title": "MyData 101 vol.1<br>〜入門編〜",
+    "href": "/events/mydata101-vol1.html",
+    "date": "2018/10/31（水）18:00-",
+    "location": "FUJITSU PLY（蒲田駅）",
+    "img": {
+        "src": "images/mydata101_vol1.png",
+        "alt": "MyData 101 vol.1"
+    }
+  },
+  {
+    "title": "MyData Global Founding meeting",
+    "href": "https://mydata.org/who-we-are/organisation/",
+    "date": "2018/10/11（木）22:00-",
+    "location": "オンライン",
+    "img": {
+        "src": "https://mydata.org/wp-content/uploads/sites/5/2018/10/Screen-Shot-founding-meeting.png",
+        "alt": "MyData Global founding meeting"
+    }
+  }
+]
