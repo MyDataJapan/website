@@ -26,7 +26,33 @@
                 </div>
             </div>
             <div class="columns is-desktop is-centered mdj-content-top">
-                <p>MyData Japan 2019の開催を企画しています。詳細は決定次第掲載いたします。</p>
+                <div class="column is-10">
+                    <p>MyData Japan 2019の開催を企画しています。詳細は決定次第掲載いたします。</p>
+                </div>
+            </div>
+            <div class="columns is-desktop is-centered mdj-content-top">
+                <%_ var comingLocalEvents -%>
+                <%_ comingLocalEvents.forEach(function(event, key) { -%>
+                <a href="<%= event.href %>" class="column is-3 is-spaced">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="<%= event.img.src %>" alt="<%= event.img.alt %>">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="is-6"><%- event.date %></p>
+                                    <p class="is-6"><%- event.location %></p>
+                                    <p class="title is-4"><%- event.title %></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <%_ }); -%>
             </div>
             <hr>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
@@ -35,25 +61,28 @@
                 </div>
             </div>
             <div class="columns is-desktop is-centered mdj-content-top">
-                <a href="https://mydata.org/events/" class="column is-3 is-spaced">
+                <%_ var comingForeignEvents -%>
+                <%_ comingForeignEvents.forEach(function(event, key) { -%>
+                <a href="<%= event.href %>" class="column is-3 is-spaced">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image">
-                                <img src="images/MyData_2019.jpg" alt="MyData 2019">
+                                <img src="<%= event.img.src %>" alt="<%= event.img.alt %>">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="is-6">2019/9/25(水) - 2019/9/27(金)</p>
-                                    <p class="is-6">ヘルシンキ - フィンランド</p>
-                                    <p class="title is-4">MyData 2019</p>
+                                    <p class="is-6"><%- event.date %></p>
+                                    <p class="is-6"><%- event.location %></p>
+                                    <p class="title is-4"><%- event.title %></p>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
+                <%_ }); -%>
             </div>
             <hr>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
@@ -62,63 +91,28 @@
                 </div>
             </div>
             <div class="columns is-desktop is-centered mdj-content-top">
-                <a href="https://mydata.org/who-we-are/organisation/" class="column is-3 is-spaced">
+                <%_ var recentEvents -%>
+                <%_ recentEvents.forEach(function(event, key) { -%>
+                <a href="<%= event.href %>" class="column is-3 is-spaced">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image">
-                                <img src="images/mydata_barcelona.png" alt="MyData Global general meeting">
+                                <img src="<%= event.img.src %>" alt="<%= event.img.alt %>">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="is-6">2018/11/15（木）23:00-</p>
-                                    <p class="is-6">バルセロナ - スペイン</p>
-                                    <p class="title is-4">MyData Global General meeting</p>
+                                    <p class="is-6"><%- event.date %></p>
+                                    <p class="is-6"><%- event.location %></p>
+                                    <p class="title is-4"><%- event.title %></p>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="/events/mydata101-vol1.html" class="column is-3 is-spaced">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="images/mydata101_vol1.png" alt="MyData 101 vol.1">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="is-6">2018/10/31（水）18:00-</p>
-                                    <p class="is-6">FUJITSU PLY（蒲田駅）</p>
-                                    <p class="title is-4">MyData 101 vol.1
-                                        <br>〜入門編〜</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://mydata.org/who-we-are/organisation/" class="column is-3 is-spaced">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://mydata.org/wp-content/uploads/sites/5/2018/10/Screen-Shot-founding-meeting.png" alt="MyData Global founding meeting">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="is-6">2018/10/11（木）22:00-</p>
-                                    <p class="is-6">オンライン</p>
-                                    <p class="title is-4">MyData Global Founding meeting</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                <%_ }); -%>
             </div>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-10">
