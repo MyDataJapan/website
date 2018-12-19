@@ -1,5 +1,15 @@
 [
   {
+    "title": "MyData LINKS Identity",
+    "href": "/events/mydata-links-identity-20181214.html",
+    "date": "2018/12/14（金）19:00-21:30",
+    "location": "DEJIMA (五反田)",
+    "img": {
+        "src": "images/mydata_links_identity_20181214.png",
+        "alt": "MyData LINKS Identity"
+    }
+  },
+  {
     "title": "MyData Global General meeting",
     "href": "https://mydata.org/who-we-are/organisation/",
     "date": "2018/11/15（木）23:00-",
@@ -17,16 +27,6 @@
     "img": {
         "src": "images/mydata101_vol1.png",
         "alt": "MyData 101 vol.1"
-    }
-  },
-  {
-    "title": "MyData Global Founding meeting",
-    "href": "https://mydata.org/who-we-are/organisation/",
-    "date": "2018/10/11（木）22:00-",
-    "location": "オンライン",
-    "img": {
-        "src": "https://mydata.org/wp-content/uploads/sites/5/2018/10/Screen-Shot-founding-meeting.png",
-        "alt": "MyData Global founding meeting"
     }
   }
 ]
