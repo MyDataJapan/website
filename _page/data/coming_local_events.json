@@ -1,12 +1,12 @@
 [
   {
-    "title": "MyData LINKS Healthcare",
-    "href": "/events/mydata-links-healthcare-20190225.html",
-    "date": "2019/02/25（月）19:00-21:30",
-    "location": "DEJIMA (五反田)",
+    "title": "MyData Japan 2019",
+    "href": "/events/mydata-japan-2019.html",
+    "date": "2019/05/15（水）10:00-19:00",
+    "location": "一橋講堂",
     "img": {
-        "src": "images/mydata_links_healthcare_20190225.png",
-        "alt": "MyData LINKS Healthcare"
+        "src": "images/mydatajapan_2019.jpg",
+        "alt": "MyData Japan 2019"
     }
   }
 ]

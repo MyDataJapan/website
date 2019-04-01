@@ -1,5 +1,15 @@
 [
   {
+    "title": "MyData 101 vol.1 〜入門編〜",
+    "href": "/events/mydata101-vol1.html",
+    "date": "2018/10/31（水）18:00-",
+    "location": "FUJITSU PLY（蒲田駅）",
+    "img": {
+        "src": "images/mydata101_vol1.png",
+        "alt": "MyData 101 vol.1"
+    }
+  },
+  {
     "title": "MyData Global Founding meeting",
     "href": "https://mydata.org/who-we-are/organisation/",
     "date": "2018/10/11（木）22:00-",
