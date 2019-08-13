@@ -36,7 +36,7 @@
 `http-server`  
 
         c:\dev\website>http-server
-        Starting up http-server, serving ./public
+        Starting up http-server, serving ./docs
         Available on:
           http://10.77.41.55:8080
           http://192.168.56.1:8080

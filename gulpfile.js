@@ -16,5 +16,5 @@ gulp.task('ejs', () => {
             pastEvents: pastEvents
         }))
         .pipe(rename({extname: '.html'}))
-        .pipe(gulp.dest('./public/'));
+        .pipe(gulp.dest('./docs/'));
 });
