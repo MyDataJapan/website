@@ -4,7 +4,7 @@
   image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
   url: 'https://mydatajapan.org/about.html'
 }; %>
-<%- include('../_layout/header', {meta: meta}) -%>    
+<%- include('../../_layout/header', {meta: meta}) -%>    
     <section class="hero is-primary is-small">
         <div class="hero-body">
             <div class="container">
@@ -22,13 +22,42 @@
         <div class="container">
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-10">
-                    <h1 class="title">MyData Japanについて</h1>
+                    <h1 id="about" class="title">一般社団法人MyDataJapanについて</h1>
+                    <div class="mdj-event-detail">
+                        <table>
+                            <tr>
+                                <td width="100px">法人名：</td>
+                                <td>一般社団法人MyDataJapan（英文：MyDataJapan）</td>
+                            </tr>
+                            <tr>
+                                <td>所在地：</td>
+                                <td>東京都港区六本木7-15-7 新六本木ビル （SENQ六本木703）
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>設立：</td>
+                                <td>2019年6月5日</td>
+                            </tr>
+                            <tr>
+                                <td>目的：</td>
+                                <td>
+                                    当法人は、公正で持続可能な社会を実現するため、パーソナルデータに関する個人中心のアプローチを推進し、個人をエンパワーすることを目的とする。
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+            </div>
+            <div class="has-text-centered mdj-has-padding-30">
+                <a class="button is-warning" href="/application/">
+                    <span class="icon"><i class="fas fa-pen-fancy"></i></span>
+                    <span>入会はこちらから</span>
+                </a>
             </div>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-5 is-spaced">
                     <p class="is-size-6">
-                        「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です。過去にMyData Japan 2017、MyData Japan 2018のカンファレンスを、ここ日本においてはオープンナレッジファウンデーションジャパンとして開催してきました。日本においても、年々この考え方に共感する参加者が増えていますが、個人として、企業として、よりこの考え方にコミットし、活動できる場が必要だと考えています。この取組みに参加する人々を増やしていくとともに、MyData Japanとして、MyDataの考え方に沿った提言、カンファレンス等のイベントの開催を行っていきます。
+                        私たちは、MyDataの考え方を日本で広めるための活動をする組織です。過去にMyData Japan 2017、MyData Japan 2018のカンファレンスを、ここ日本においてはオープンナレッジファウンデーションジャパンとして開催してきました。日本においても、年々この考え方に共感する参加者が増えていますが、個人として、企業として、よりこの考え方にコミットし、活動できる場が必要だと考えています。この取組みに参加する人々を増やしていくとともに、一般社団法人MyDataJapanとして、MyDataの考え方に沿った提言、カンファレンス等のイベントの開催を行っていきます。
                     </p>
                     <hr>
                     <h1 class="subtitle">MyData Global Japan Hubとして</h1>
@@ -37,7 +66,7 @@
                     </p>
                 </div>
                 <div class="column is-5 is-spaced has-text-centered">
-                    <img class="mdj-is-vertical-centered" src="images/MyDataJapan_large_logo.png" alt="MyData Declaration" width="100%">
+                    <img class="mdj-is-vertical-centered" src="/images/MyDataJapan_large_logo.png" alt="MyData Declaration" width="100%">
                 </div>
             </div>
             <hr>
@@ -48,7 +77,7 @@
             </div>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-5 is-spaced has-text-centered">
-                    <img class="mdj-is-vertical-centered mdj-has-shadow" src="images/MyData-Global-Hubs-map.jpg" alt="MyData Declaration" width="100%">
+                    <img class="mdj-is-vertical-centered mdj-has-shadow" src="/images/MyData-Global-Hubs-map.jpg" alt="MyData Declaration" width="100%">
                 </div>
                 <div class="column is-5 is-spaced">
                     <p class="is-size-6">
@@ -64,4 +93,4 @@
             </div>
         </div>
     </section>
-<%- include('../_layout/footer') -%>
+<%- include('../../_layout/footer') -%>

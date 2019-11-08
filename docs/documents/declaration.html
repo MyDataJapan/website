@@ -4,16 +4,16 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="個人用入会申込フォーム">
+    <meta name="description" content="「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FFFFFF">
-    <meta property="og:title" content="個人の方の申込みフォーム - MyData Japan">
+    <meta property="og:title" content="MyDataの原則に関する宣言 - MyData Japan">
     <meta property="og:image" content="https://mydatajapan.org/images/MyDataJapan_ogp.png">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="個人用入会申込フォーム">
-    <meta property="og:url" content="https://mydatajapan.org/application/individual.html">
-    <meta property="og:site_name" content="個人の方の申込みフォーム - MyData Japan">
-    <title>個人の方の申込みフォーム - MyData Japan</title>
+    <meta property="og:description" content="「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です">
+    <meta property="og:url" content="https://mydatajapan.org/declaration.html">
+    <meta property="og:site_name" content="MyDataの原則に関する宣言 - MyData Japan">
+    <title>MyDataの原則に関する宣言 - MyData Japan</title>
     <style type="text/css"></style>
     <link rel="stylesheet" href="/dist/css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="/images/mydata_favicon.png">
@@ -94,8 +94,17 @@
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-desktop is-centered is-spaced">
-                    <div class="column is-10 is-spaced">
-                        <h1 class="title">個人の方の申込みフォーム</h1>
+                    <div class="column is-7 is-spaced">
+                        <h1 class="title">MyDataの原則に関する宣言</h1>
+                        <h2 class="subtitle">MyDataの考え方に賛同いただける方はぜひご入会ください</h2>
+                    </div>
+                    <div class="column is-3 is-spaced">
+                        <div class="has-text-centered">
+                            <a class="button is-warning mdj-is-vertical-centered" href="/application/">
+                                <span class="icon"><i class="fas fa-pen-nib"></i></span>
+                                <span>入会はこちら</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,8 +113,17 @@
 
     <section class="mdj-content">
         <div class="container">
-            <script src="https://sdk.form.run/js/v2/embed.js"></script>
-            <div class="formrun-embed" data-formrun-form="@mydatajapan-application-individual" data-formrun-redirect="true">
+
+            <div class="columns is-desktop is-centered is-spaced">
+                <div class="column is-10 is-spaced mdj-declaration mdj-marked">
+                </div>
+                <script src="/dist/js/marked.min.js"></script>
+                <script>
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/declaration/1.0/JA/index.markdown", function (data) {
+                        var md = marked(data);
+                        $(".mdj-declaration").html(md);
+                    });
+                </script>
             </div>
         </div>
     </section>

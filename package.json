@@ -23,5 +23,8 @@
     "gulp-ejs": "^3.2.1",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0"
+  },
+  "dependencies": {
+    "har-validator": "^5.1.3"
   }
 }

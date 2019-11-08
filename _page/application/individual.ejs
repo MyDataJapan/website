@@ -1,0 +1,27 @@
+<% var meta = { 
+  title:'個人の方の申込みフォーム - MyData Japan', 
+  desc:'個人用入会申込フォーム',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/application/individual.html'
+}; %>
+<%- include('../../_layout/header', {meta: meta}) -%>    
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">個人の方の申込みフォーム</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+            <script src="https://sdk.form.run/js/v2/embed.js"></script>
+            <div class="formrun-embed" data-formrun-form="@mydatajapan-application-individual" data-formrun-redirect="true">
+            </div>
+        </div>
+    </section>
+<%- include('../../_layout/footer') -%>

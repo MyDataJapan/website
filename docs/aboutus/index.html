@@ -53,30 +53,37 @@
 
                 <div id="mydatajapan-nav" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item" href="/about.html">私たちについて</a>
-                        <a class="navbar-item" href="/events.html">イベント</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="/aboutus/">私たちについて</a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="/aboutus/#about">法人概要</a>
+                                <a class="navbar-item" href="/aboutus/directors_list.html">理事・監事・顧問一覧</a>
+                                <a class="navbar-item" href="/aboutus/member_list.html">会員一覧</a>
+                            </div>
+                        </div>
+                        <a class="navbar-item" href="/events/">イベント</a>
                         <a class="navbar-item" href="/contact.html">お問い合わせ</a>
                         <div class="navbar-item">
                             <div class="field is-grouped">
-
                                 <p class="control">
-                                    <a class="button is-primary" href="/declaration.html">
+                                    <a class="button is-warning" href="/application/">
+                                        <span class="icon"><i class="fas fa-pen-fancy"></i></span>
+                                        <span>入会について</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="button is-primary" href="/documents/declaration.html">
                                         <span class="icon"><i class="fas fa-book"></i></span>
                                         <span>MyDataの原則</span>
                                     </a>
                                 </p>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link" href="https://mydata.org/" target="_blank">
-                            MyData Global&nbsp;<i class="fas fa-external-link-alt fa-xs"></i>
-                        </a>
-                            <div class="navbar-dropdown is-boxed">
-                                <a class="navbar-item" href="https://mydata.org/declaration/" target="_blank">Declaration</a>
-                                <a class="navbar-item" href="https://mydata.org/papers/" target="_blank">Papers</a>
-                                <a class="navbar-item" href="https://mydata.org/hubs/" target="_blank">Local Hubs</a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </nav>
@@ -100,13 +107,42 @@
         <div class="container">
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-10">
-                    <h1 class="title">MyData Japanについて</h1>
+                    <h1 id="about" class="title">一般社団法人MyDataJapanについて</h1>
+                    <div class="mdj-event-detail">
+                        <table>
+                            <tr>
+                                <td width="100px">法人名：</td>
+                                <td>一般社団法人MyDataJapan（英文：MyDataJapan）</td>
+                            </tr>
+                            <tr>
+                                <td>所在地：</td>
+                                <td>東京都港区六本木7-15-7 新六本木ビル （SENQ六本木703）
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>設立：</td>
+                                <td>2019年6月5日</td>
+                            </tr>
+                            <tr>
+                                <td>目的：</td>
+                                <td>
+                                    当法人は、公正で持続可能な社会を実現するため、パーソナルデータに関する個人中心のアプローチを推進し、個人をエンパワーすることを目的とする。
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
+            </div>
+            <div class="has-text-centered mdj-has-padding-30">
+                <a class="button is-warning" href="/application/">
+                    <span class="icon"><i class="fas fa-pen-fancy"></i></span>
+                    <span>入会はこちらから</span>
+                </a>
             </div>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-5 is-spaced">
                     <p class="is-size-6">
-                        「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です。過去にMyData Japan 2017、MyData Japan 2018のカンファレンスを、ここ日本においてはオープンナレッジファウンデーションジャパンとして開催してきました。日本においても、年々この考え方に共感する参加者が増えていますが、個人として、企業として、よりこの考え方にコミットし、活動できる場が必要だと考えています。この取組みに参加する人々を増やしていくとともに、MyData Japanとして、MyDataの考え方に沿った提言、カンファレンス等のイベントの開催を行っていきます。
+                        私たちは、MyDataの考え方を日本で広めるための活動をする組織です。過去にMyData Japan 2017、MyData Japan 2018のカンファレンスを、ここ日本においてはオープンナレッジファウンデーションジャパンとして開催してきました。日本においても、年々この考え方に共感する参加者が増えていますが、個人として、企業として、よりこの考え方にコミットし、活動できる場が必要だと考えています。この取組みに参加する人々を増やしていくとともに、一般社団法人MyDataJapanとして、MyDataの考え方に沿った提言、カンファレンス等のイベントの開催を行っていきます。
                     </p>
                     <hr>
                     <h1 class="subtitle">MyData Global Japan Hubとして</h1>
@@ -115,7 +151,7 @@
                     </p>
                 </div>
                 <div class="column is-5 is-spaced has-text-centered">
-                    <img class="mdj-is-vertical-centered" src="images/MyDataJapan_large_logo.png" alt="MyData Declaration" width="100%">
+                    <img class="mdj-is-vertical-centered" src="/images/MyDataJapan_large_logo.png" alt="MyData Declaration" width="100%">
                 </div>
             </div>
             <hr>
@@ -126,7 +162,7 @@
             </div>
             <div class="columns is-desktop is-centered is-spaced mdj-content-top">
                 <div class="column is-5 is-spaced has-text-centered">
-                    <img class="mdj-is-vertical-centered mdj-has-shadow" src="images/MyData-Global-Hubs-map.jpg" alt="MyData Declaration" width="100%">
+                    <img class="mdj-is-vertical-centered mdj-has-shadow" src="/images/MyData-Global-Hubs-map.jpg" alt="MyData Declaration" width="100%">
                 </div>
                 <div class="column is-5 is-spaced">
                     <p class="is-size-6">
@@ -146,7 +182,7 @@
         <div class="content has-text-centered">
 
             <div class="columns is-centered is-desktop">
-                <div class="column is-2"><a href="/privacy_policy.html">プライバシーポリシー</a></div>
+                <div class="column is-2"><a href="/documents/privacy_policy.html">プライバシーポリシー</a></div>
                 <div class="column is-2">
                     <input type="hidden" id="opn_link_text" value="オンラインプライバシー通知">
                     <div id="datasign_privacy_notice">
@@ -158,7 +194,7 @@
                 ©
                 <script>
                     document.write(new Date().getFullYear())
-                </script> <a href="https://mydatajapan.org/" target="_blank">MyDataJapan.org</a> & <a href="https://mydata.org/" target="_blank">MyData.org</a> (CC BY 4.0)
+                </script> <a href="https://mydatajapan.org/" target="_blank">一般社団法人MyDataJapan</a> & <a href="https://mydata.org/" target="_blank">MyData.org</a> (CC BY 4.0)
             </div>
         </div>
     </footer>
