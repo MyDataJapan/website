@@ -4,20 +4,20 @@
   image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
   url: 'https://mydatajapan.org/declaration.html'
 }; %>
-<%- include('../_layout/header', {meta: meta}) -%>    
+<%- include('../../_layout/header', {meta: meta}) -%>    
     <section class="hero is-primary is-small">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-desktop is-centered is-spaced">
                     <div class="column is-7 is-spaced">
                         <h1 class="title">MyDataの原則に関する宣言</h1>
-                        <h2 class="subtitle">MyDataの考え方に賛同いただける方は署名システムより署名してください</h2>
+                        <h2 class="subtitle">MyDataの考え方に賛同いただける方はぜひご入会ください</h2>
                     </div>
                     <div class="column is-3 is-spaced">
                         <div class="has-text-centered">
-                            <a class="button is-warning mdj-is-vertical-centered" href="https://mydata.org/declaration/" target="_blank">
+                            <a class="button is-warning mdj-is-vertical-centered" href="/application/">
                                 <span class="icon"><i class="fas fa-pen-nib"></i></span>
-                                <span>宣言への署名はこちら</span>
+                                <span>入会はこちら</span>
                             </a>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
             <div class="columns is-desktop is-centered is-spaced">
                 <div class="column is-10 is-spaced mdj-declaration mdj-marked">
                 </div>
-                <script src="dist/js/marked.min.js"></script>
+                <script src="/dist/js/marked.min.js"></script>
                 <script>
                     $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/declaration/1.0/JA/index.markdown", function (data) {
                         var md = marked(data);
@@ -42,4 +42,4 @@
             </div>
         </div>
     </section>
-<%- include('../_layout/footer') -%>
+<%- include('../../_layout/footer') -%>

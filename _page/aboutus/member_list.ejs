@@ -1,0 +1,60 @@
+<% var meta = { 
+  title:'会員リスト - MyData Japan', 
+  desc:'MyData Japanの会員リストです。',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/aboutus/member_list.html'
+}; %>
+<%- include('../../_layout/header', {meta: meta}) -%>
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">会員一覧</h1>
+                        <h2 class="subtitle"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+            <div class="columns is-desktop is-centered is-spaced mdj-content-top">
+                <div class="column is-6">
+                    <h1 id="mdj-program" class="subtitle has-text-weight-bold">法人会員 </h1>
+                    <table class="mdj-table">
+                        <tr>
+                            <td>
+                                <article class="message is-info">
+                                    <div class="message-body">
+                                        <div class="columns is-mobile">
+                                            <a href="https://www.intage.co.jp/" class="column is-7" target="_blank">
+                                                株式会社インテージ
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <article class="message is-info">
+                                    <div class="message-body">
+                                        <div class="columns is-mobile">
+                                            <a href="https://www.greenwillow.co.jp/" class="column is-7" target="_blank">
+                                                株式会社グリーンウィロー
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </td>
+                        </tr>
+                    </table>
+                2019年11月12日現在
+                </div>
+            </div>
+        </div>
+    </section>
+<%- include('../../_layout/footer') -%>

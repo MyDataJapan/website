@@ -1,0 +1,36 @@
+<% var meta = { 
+  title:'会員規約 - MyData Japan', 
+  desc:'「MyData Japan」の会員規約です',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/privacy_policy.html'
+}; %>
+<%- include('../../_layout/header', {meta: meta}) -%>    
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">会員規約</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+
+            <div class="columns is-desktop is-centered is-spaced">
+                <div class="column is-10 is-spaced mdj-declaration mdj-marked">
+                </div>
+                <script src="/dist/js/marked.min.js"></script>
+                <script>
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/application/membership_agreement/index.markdown", function(data) {
+                        var md = marked(data);
+                        $(".mdj-declaration").html(md);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+<%- include('../../_layout/footer') -%>

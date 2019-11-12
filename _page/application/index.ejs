@@ -1,0 +1,218 @@
+<% var meta = { 
+  title:'入会申込について - MyData Japan', 
+  desc:'「MyData Japan」への入会申込はこちらから',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/application/'
+}; %>
+<%- include('../../_layout/header', {meta: meta}) -%>    
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">入会申込について</h1>
+                        <h2 class="subtitle">MyDataの活動に賛同いただけるかたは、ぜひ MyData Japan の会員になって、ご支援お願いします。</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+            <div class="mdj-has-padding-30">
+                <h1 id="mdj-flow" class="subtitle has-text-weight-semibold">入会フロー</h1>
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column">
+                        <article class="message is-warning is-medium">
+                            <div class="message-header">
+                                <p>ステップ１ <i class="fas fa-book"></i></p>
+                            </div>
+                            <div class="message-body">
+                                MyData原則への賛同
+                                <div class="is-size-6">
+                                    <a href="/documents/declaration.html">MyData原則</a>をご参照ください。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="message is-warning is-medium">
+                            <div class="message-header">
+                                <p>ステップ２ <i class="fas fa-pen-fancy"></i></p>
+                            </div>
+                            <div class="message-body">
+                                入会申込
+                                <div class="is-size-6">
+                                    <a href="#mdj-member-class">会員種別</a>を選択し、入会申込をお願いいたします。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="message is-warning is-medium">
+                            <div class="message-header">
+                                <p>ステップ３ <i class="fas fa-archway"></i></p>
+                            </div>
+                            <div class="message-body">
+                                入会審査
+                                <div class="is-size-6">
+                                    理事会での入会審査が月一回行われます。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="message is-warning is-medium">
+                            <div class="message-header">
+                                <p>ステップ４ <i class="far fa-handshake"></i></p>
+                            </div>
+                            <div class="message-body">
+                                会費のお支払い
+                                <div class="is-size-6">
+                                    会費をお支払いいただき、会員となります！
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="mdj-has-padding-30">
+                <h1 id="mdj-flow" class="subtitle has-text-weight-semibold">お読みいただく文書</h1>
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column">
+                        <article class="message is-info is-medium">
+                            <div class="message-header">
+                                <p><i class="fas fa-book"></i> MyDataの原則に関する宣言</p>
+                            </div>
+                            <div class="message-body">
+                                <a href="/documents/declaration.html">MyData原則</a>への賛同
+                                <div class="is-size-6">
+                                    MyDataの原則に関する宣言をお読みいただき、賛同頂く必要があります。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="message is-info is-medium">
+                            <div class="message-header">
+                                <p><i class="fas fa-book"></i> 会員規約</p>
+                            </div>
+                            <div class="message-body">
+                                <a href="/documents/membership_agreement.html">会員規約</a>への同意
+                                <div class="is-size-6">
+                                    会員規約をお読みいただき、ご同意ください。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="message is-info is-medium">
+                            <div class="message-header">
+                                <p><i class="fas fa-book"></i> プライバシーポリシー</p>
+                            </div>
+                            <div class="message-body">
+                                <a href="/documents/privacy_policy.html">プライバシーポリシー</a>の確認
+                                <div class="is-size-6">
+                                    MyDataJapanはパーソナルデータを適切に取得・管理いたします。
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="mdj-has-padding-30">
+                <h1 id="mdj-member-class" class="subtitle has-text-weight-semibold">会員種別</h1>
+                <table class="mdj-table is-bordered is-desktop mdj-has-padding-30 mdj-event-detail">
+                    <tbody>
+                        <tr>
+                            <th class="mdj-vcentered">種別</th>
+                            <th class="mdj-vcentered">年会費</th>
+                            <th class="mdj-vcentered">役割</th>
+                        </tr>
+                        <tr>
+                            <td class="mdj-vcentered">個人会員</td>
+                            <td class="mdj-vcentered">
+                                1万円</td>
+                            <td>
+                                <ul>
+                                    <li>・各種委員会への参加</li>
+                                    <li>・内部イベントへの参加</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdj-vcentered">個人代表会員</td>
+                            <td class="mdj-vcentered">
+                                1万円</td>
+                            <td>
+                                <ul>
+                                    <li>・各種委員会への参加／議決権</li>
+                                    <li>・内部イベントへの参加</li>
+                                    <li>・社員総会での議決権</li>
+                                </ul>
+                                <small>※個人代表会員になるには、理事・社員からの推薦が必要です。</small><br>
+                                <small>※本ウェブサイトから、個人代表会員へのお申込みはできません。</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdj-vcentered">法人賛助会員</td>
+                            <td class="mdj-vcentered">
+                                10万円</td>
+                            <td>
+                                <ul>
+                                    <li>・各種委員会への参加</li>
+                                    <li>・内部イベントへの参加</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdj-vcentered">法人会員</td>
+                            <td class="mdj-vcentered">
+                                30万円</td>
+                            <td>
+                                <ul>
+                                    <li>・各種委員会への参加／議決権</li>
+                                    <li>・内部イベントへの参加</li>
+                                    <li>・社員総会での議決権</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mdj-vcentered">特別会員</td>
+                            <td class="mdj-vcentered">
+                                0円</td>
+                            <td>
+                                <ul>
+                                    <li>・各種委員会への参加</li>
+                                    <li>・内部イベントへの参加</li>
+                                </ul>
+                                <small>※特別会員は、一般社団法人MyDataJapanと連携する団体などのための会員種別です。</small><br>
+                                <small>※本ウェブサイトから、特別会員へのお申込みはできません。</small>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                ※年会費の始期は４月１日とし、３月３１日までの１年間となります。期中入会においても満額のお支払いが必要です。
+            </div>
+            <div class="mdj-has-padding-30">
+                <h1 id="mdj-application" class="subtitle has-text-weight-semibold">入会申込</h1>
+                <div class="columns is-desktop is-centered is-spaced has-text-centered mdj-has-padding-30">
+                    <div class="column">
+                        <a class="button is-primary is-large mdj-has-padding-30" href="/application/individual.html">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span>個人の方はこちら</span>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a class="button is-primary is-large mdj-has-padding-30" href="/application/organization.html">
+                            <span class="icon"><i class="fas fa-building"></i></span>
+                            <span>法人の方はこちら</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<%- include('../../_layout/footer') -%>
