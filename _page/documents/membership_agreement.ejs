@@ -25,7 +25,7 @@
                 </div>
                 <script src="/dist/js/marked.min.js"></script>
                 <script>
-                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/membership_agreement/index.markdown", function(data) {
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/application/membership_agreement/index.markdown", function(data) {
                         var md = marked(data);
                         $(".mdj-declaration").html(md);
                     });
