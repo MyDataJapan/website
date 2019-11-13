@@ -111,7 +111,7 @@
                 </div>
                 <script src="/dist/js/marked.min.js"></script>
                 <script>
-                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/application/privacy-policy/index.markdown", function (data) {
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/privacy-policy/index.markdown", function (data) {
                         var md = marked(data);
                         $(".mdj-declaration").html(md);
                     });
