@@ -1,5 +1,15 @@
 [
   {
+    "title": "MyData Global General meeting",
+    "href": "https://mydata.org/who-we-are/organisation/",
+    "date": "2018/11/15（木）23:00-",
+    "location": "バルセロナ - スペイン",
+    "img": {
+        "src": "/images/mydata_barcelona.png",
+        "alt": "MyData Global general meeting"
+    }
+  },
+  {
     "title": "MyData 101 vol.1 〜入門編〜",
     "href": "/events/mydata101-vol1.html",
     "date": "2018/10/31（水）18:00-",

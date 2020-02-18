@@ -1,5 +1,15 @@
 [
   {
+    "title": "MyData Japan 2019",
+    "href": "/events/mydata-japan-2019.html",
+    "date": "2019/05/15（水）10:00-19:00",
+    "location": "一橋講堂",
+    "img": {
+        "src": "/images/mydatajapan_2019.png",
+        "alt": "MyData Japan 2019"
+    }
+  },
+  {
     "title": "MyData LINKS Healthcare",
     "href": "/events/mydata-links-healthcare-20190225.html",
     "date": "2019/02/25（月）19:00-21:30",
@@ -17,16 +27,6 @@
     "img": {
         "src": "/images/mydata_links_identity_20181214.png",
         "alt": "MyData LINKS Identity"
-    }
-  },
-  {
-    "title": "MyData Global General meeting",
-    "href": "https://mydata.org/who-we-are/organisation/",
-    "date": "2018/11/15（木）23:00-",
-    "location": "バルセロナ - スペイン",
-    "img": {
-        "src": "/images/mydata_barcelona.png",
-        "alt": "MyData Global general meeting"
     }
   }
 ]

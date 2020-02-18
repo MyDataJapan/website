@@ -35,7 +35,7 @@
 1. 下記のコマンドを実行してウェブサイトを確認する。  
 `http-server`  
 
-        c:\dev\website>http-server
+        c:\dev\website>http-server ./docs
         Starting up http-server, serving ./docs
         Available on:
           http://10.77.41.55:8080
