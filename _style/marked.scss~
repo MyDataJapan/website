@@ -149,4 +149,12 @@
         border: 1px #888 solid;
         vertical-align: top;
     }
+    fig {                       
+	float: left;
+	margin: 10px 15px 10px 0;
+	width: 330px;
+    }
+    float_none {
+        clear: both;
+    }
 }
