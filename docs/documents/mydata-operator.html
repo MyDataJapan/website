@@ -7,13 +7,13 @@
     <meta name="description" content="「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FFFFFF">
-    <meta property="og:title" content="お問い合わせ - MyData Japan">
+    <meta property="og:title" content="Understanding Mydata Operators (和訳) - MyData Japan">
     <meta property="og:image" content="https://mydatajapan.org/images/MyDataJapan_ogp.png">
     <meta property="og:type" content="website">
     <meta property="og:description" content="「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です">
-    <meta property="og:url" content="https://mydatajapan.org/contact.html">
-    <meta property="og:site_name" content="お問い合わせ - MyData Japan">
-    <title>お問い合わせ - MyData Japan</title>
+    <meta property="og:url" content="https://mydatajapan.org/documents/mydata-operator.html">
+    <meta property="og:site_name" content="Understanding Mydata Operators (和訳) - MyData Japan">
+    <title>Understanding Mydata Operators (和訳) - MyData Japan</title>
     <style type="text/css"></style>
     <link rel="stylesheet" href="/dist/css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="/images/mydata_favicon.png">
@@ -101,8 +101,8 @@
             <div class="container">
                 <div class="columns is-desktop is-centered is-spaced">
                     <div class="column is-10 is-spaced">
-                        <h1 class="title">お問い合わせ</h1>
-                        <h2 class="subtitle">MyData Japanへの参加や取材のお問い合わせはこちらからお願いいたします</h2>
+                        <h1 class="title">Undersntanding MyData Operators</h1>
+                        <h2 class="subtitle">日本語訳</h2>
                     </div>
                 </div>
             </div>
@@ -111,15 +111,17 @@
 
     <section class="mdj-content">
         <div class="container">
+
             <div class="columns is-desktop is-centered is-spaced">
-                <div class="column is-8 is-spaced">
-                    <script id="_bownow_cs_sid_da604183880f03916be5">
-                        var _bownow_cs_sid_da604183880f03916be5 = document.createElement('script');
-                        _bownow_cs_sid_da604183880f03916be5.charset = 'utf-8';
-                        _bownow_cs_sid_da604183880f03916be5.src = 'https://contents.bownow.jp/forms/sid_da604183880f03916be5/trace.js';
-                        document.getElementsByTagName('head')[0].appendChild(_bownow_cs_sid_da604183880f03916be5);
-                    </script>
+                <div class="column is-10 is-spaced mdj-declaration mdj-marked">
                 </div>
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script>
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/mydata-operator/index.markdown", function (data) {
+                        var md = marked(data);
+                        $(".mdj-declaration").html(md);
+                    });
+                </script>
             </div>
         </div>
     </section>

@@ -1,0 +1,37 @@
+<% var meta = { 
+  title:'Understanding Mydata Operators (和訳) - MyData Japan', 
+  desc:'「MyData Japan」は、MyDataの考え方を日本で広めるための活動をする組織です',
+  image: 'https://mydatajapan.org/images/MyDataJapan_ogp.png',
+  url: 'https://mydatajapan.org/documents/mydata-operator.html'
+}; %>
+<%- include('../../_layout/header', {meta: meta}) -%>    
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-desktop is-centered is-spaced">
+                    <div class="column is-10 is-spaced">
+                        <h1 class="title">Undersntanding MyData Operators</h1>
+                        <h2 class="subtitle">日本語訳</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mdj-content">
+        <div class="container">
+
+            <div class="columns is-desktop is-centered is-spaced">
+                <div class="column is-10 is-spaced mdj-declaration mdj-marked">
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script>
+                    $.get("https://raw.githubusercontent.com/MyDataJapan/documents/master/mydata-operator/index.markdown", function (data) {
+                        var md = marked(data);
+                        $(".mdj-declaration").html(md);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+<%- include('../../_layout/footer') -%>
