@@ -31,4 +31,5 @@ CSSフレームワークはBulmaを用いて、webpackでビルドしていま�
 - [ ] プルリクマージで本番反映したい
 - [ ] テンプレートを絶対参照できるようにしたい
 - [ ] ちゃんとCMS化する
-
+To translate the above Readme.md , click here -> https://translate.google.co.in/
+Thank you!
